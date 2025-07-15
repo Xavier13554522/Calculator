@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator_container">
+
+        <div class="container_result"><h3 class="result">0</h3></div>
+        <div class="button_flex">
+
+            <div class="button_row_grid">
+                <div class="button_row">
+                <button class="button_style" onclick="updateDisplay(7)">7</button>
+                <button class="button_style" onclick="updateDisplay(8)">8</button>
+                <button class="button_style" onclick="updateDisplay(9)">9</button>
+                </div>
+                <div class="button_row">
+                <button class="button_style" onclick="updateDisplay(4)">4</button>
+                <button class="button_style" onclick="updateDisplay(5)">5</button>
+                <button class="button_style" onclick="updateDisplay(6)">6</button>
+                </div>
+                <div class="button_row">
+                <button class="button_style" onclick="updateDisplay(1)">1</button>
+                <button class="button_style" onclick="updateDisplay(2)">2</button>
+                <button class="button_style" onclick="updateDisplay(3)">3</button>
+                </div>
+                
+                <div class="button_row">
+                <button class="button_style" onclick="updateDisplay(0)">0</button>
+                <button class="button_style" onclick="symbols('=')">=</button>
+                <button class="button_style" onclick="symbols('C')">C</button>
+                </div>
+            </div>
+            <div class="button_row_simbols">
+
+            <button class="button_style symbols" onclick="symbols('+')">+</button>
+            <button class="button_style symbols" onclick="symbols('-')">-</button> 
+            <button class="button_style symbols" onclick="symbols('*')">*</button>
+            <button class="button_style symbols" onclick="symbols('/')">/</button>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
