@@ -42,8 +42,12 @@ function symbols(operator){
                             result = "";
                             break;
                             case "=":
-                                if (result = "27/05/2008"){
+                                result = display.innerHTML;
+                                if (result === "27/05/2008"){
                                     window.open("https://www.youtube.com/@XavierX1355", "_blank");
+                                }
+                                if(result === "666"){
+                                    window.open("https://www.youtube.com/@thejulcel3657","_blank")
                                 }
                                 result = eval(display.innerHTML);
                                 display.innerHTML = result;
@@ -53,7 +57,6 @@ function symbols(operator){
                                     previus_result = false;
                                     console.log("Invalid operation");
                                 }
-                                console.log(result)
                                 break;
                             }
                             previusvalue += operator;
